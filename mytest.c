@@ -22,11 +22,16 @@ char Small[80];
        
 	  
 	  
-	    for(i=0;hh[i]!='\0'; i++) 
-	    	Small[i]=hh[i];
-		 if (Small[i]>='a'&& Small[i]<='z')
-	     
+	    for(i=0;hh[i]!='\0'; i++) {
 		
+	    Small[i]=hh[i];
+		 if (Small[i]>='a'&& Small[i]<='z')
+		 printf("%c",Small[i]);
+		  else if (Small[i]>='a'&& Small[i]<='z')
+	     printf("%c",Small[i] + ('a'-'A'));
+	     else 
+	     printf("%c",Small[i]);
+		}
         printf("\n%s\n",Small);	 //we are the champion
 
 }
